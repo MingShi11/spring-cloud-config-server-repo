@@ -1,0 +1,21 @@
+routes:
+  - id: internalBookingRoutes
+    uri: http://air-lcl-logistics-booking-router-api-srvc.air-logistics-booking:8080
+    predicates:
+      - Path=/api/internal/bookingRoutes/**
+  - id: internalCustomerContacts
+    uri: http://air-logistics-booking-notification-srvc.air-logistics-booking:8080
+    predicates:
+      - Path=/api/internal/customerContacts/**
+  - id: internalNotificationSettings
+    uri: http://air-logistics-booking-notification-srvc.air-logistics-booking:8080
+    predicates:
+      - Path=/api/internal/notificationSettings/**
+  - id: internalBookings
+    uri: http://air-logistics-booking-api-srvc.air-logistics-booking:8080
+    predicates:
+      - Path=/api/internal/bookings/**
+  - id: internalAnalytics
+    uri: http://air-lcl-logistics-common-analytics-srvc.air-lcl-logistics-common:8080
+    predicates:
+      - Path=/api/internal/analytics/**
