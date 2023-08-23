@@ -3,19 +3,24 @@ routes:
     uri: http://air-lcl-logistics-booking-router-api-srvc.air-logistics-booking:8080
     predicates:
       - Path=/api/internal/bookingRoutes/**
+    roles: ADMIN1,OPERATOR1
   - id: internalCustomerContacts
     uri: http://air-logistics-booking-notification-srvc.air-logistics-booking:8080
     predicates:
       - Path=/api/internal/customerContacts/**
+    roles: ADMIN2,OPERATOR2
   - id: internalNotificationSettings
     uri: http://air-logistics-booking-notification-srvc.air-logistics-booking:8080
     predicates:
       - Path=/api/internal/notificationSettings/**
+    roles: ADMIN3,OPERATOR3
   - id: internalBookings
     uri: http://air-logistics-booking-api-srvc.air-logistics-booking:8080
     predicates:
       - Path=/api/internal/bookings/**
+    roles: ADMIN4,OPERATOR4
   - id: internalAnalytics
     uri: http://air-lcl-logistics-common-analytics-srvc.air-lcl-logistics-common:8080
     predicates:
       - Path=/api/internal/analytics/**
+    roles: ADMIN5,OPERATOR5
