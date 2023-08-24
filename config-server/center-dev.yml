@@ -1,36 +1,39 @@
-routes:
-  - id: internalBookingRoutes
-    uri: https://www.baidu.com/
-    predicates:
-      - Path=/api/baidu/**
-    roles: ADMIN1,OPERATOR1
-    metadata:
-      roles: ADMIN1,OPERATOR1
-  - id: internalCustomerContacts
-    uri: https://www.sogou.com/
-    predicates:
-      - Path=/api/sogou/**
-    roles: ADMIN2,OPERATOR2
-    metadata:
-      roles: ADMIN2,OPERATOR2
-  - id: internalNotificationSettings
-    uri: https://hk.yahoo.com/
-    predicates:
-      - Path=/api/yahoo/**
-    roles: ADMIN3,OPERATOR3
-    metadata:
-      roles: ADMIN3,OPERATOR3
-  - id: internalBookings
-    uri: https://www.so.com/
-    predicates:
-      - Path=/api/so/**
-    roles: ADMIN4,OPERATOR4
-    metadata:
-      roles: ADMIN4,OPERATOR4
-  - id: internalAnalytics
-    uri: http://m.chinaso.com/
-    predicates:
-      - Path=/api/chinaso/**
-    roles: ADMIN5,OPERATOR5
-    metadata:
-      roles: ADMIN5,OPERATOR5
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: internalBookingRoutes
+          uri: https://www.baidu.com/
+          predicates:
+            - Path=/api/baidu/**
+          roles: ADMIN1,OPERATOR1
+          metadata:
+            roles: ADMIN1,OPERATOR1
+        - id: internalCustomerContacts
+          uri: https://www.sogou.com/
+          predicates:
+            - Path=/api/sogou/**
+          roles: ADMIN2,OPERATOR2
+          metadata:
+            roles: ADMIN2,OPERATOR2
+        - id: internalNotificationSettings
+          uri: https://hk.yahoo.com/
+          predicates:
+            - Path=/api/yahoo/**
+          roles: ADMIN3,OPERATOR3
+          metadata:
+            roles: ADMIN3,OPERATOR3
+        - id: internalBookings
+          uri: https://www.so.com/
+          predicates:
+            - Path=/api/so/**
+          roles: ADMIN4,OPERATOR4
+          metadata:
+            roles: ADMIN4,OPERATOR4
+        - id: internalAnalytics
+          uri: http://m.chinaso.com/
+          predicates:
+            - Path=/api/chinaso/**
+          roles: ADMIN5,OPERATOR5
+          metadata:
+            roles: ADMIN5,OPERATOR5
