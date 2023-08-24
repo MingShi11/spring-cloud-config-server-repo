@@ -6,7 +6,7 @@ spring:
           uri: https://www.baidu.com/
           predicates:
             - Path=/api/baidu/**
-          roles: ADMIN1,OPERATOR1
+          roles: ADMIN1,OPERATOR1ccccccccc
           metadata:
             roles: ADMIN1,OPERATOR1
         - id: internalCustomerContacts
