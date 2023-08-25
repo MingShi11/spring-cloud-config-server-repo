@@ -15,7 +15,7 @@ spring:
             - Path=/api/sogou/**
           roles: ADMIN2,OPERATOR2
           metadata:
-            roles: ADMIN2,OPERATOR2
+            roles: ADMIN2,Operator
         - id: internalNotificationSettings
           uri: https://hk.yahoo.com/
           predicates:
