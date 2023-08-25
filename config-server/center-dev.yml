@@ -5,7 +5,7 @@ spring:
         - id: internalBookingRoutes
           uri: https://www.baidu.com/
           predicates:
-            - Path=/api/baidu/**
+            - Path=/api/baidu/redirect/**
           roles: ADMIN1,Operator
           metadata:
             roles: ADMIN1,Operator
