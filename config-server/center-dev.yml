@@ -3,10 +3,10 @@ spring:
     gateway:
       routes:
         - id: internalBookingRoutes
-          uri: https://www.baidu234.com/
+          uri: https://www.baidu.com/
           predicates:
             - Path=/api/baidu/**
-          roles: ADMIN1,OPERATOR1ccccccccc
+          roles: ADMIN1,OPERATOR
           metadata:
             roles: ADMIN1,OPERATOR1
         - id: internalCustomerContacts
