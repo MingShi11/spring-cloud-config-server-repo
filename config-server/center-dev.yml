@@ -3,7 +3,7 @@ spring:
     gateway:
       routes:
         - id: internalBookingRoutes
-          uri: https://jwt.io/
+          uri: https://www.baidu.com/
           predicates:
             - Path=/api/baidu/**
           roles: ADMIN1,Operator
