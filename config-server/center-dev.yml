@@ -8,7 +8,7 @@ spring:
             - Path=/api/baidu/**
           roles: ADMIN1,Operator
           metadata:
-            roles: ADMIN1,OPERATOR
+            roles: ADMIN1,Operator
         - id: internalCustomerContacts
           uri: https://www.sogou.com/
           predicates:
