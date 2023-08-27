@@ -8,7 +8,7 @@ spring:
             - Path=/api/baidu/redirect/**
           roles: ADMIN1,Operator1
           metadata:
-            roles: ADMIN1,Operator
+            roles: ADMIN1,Operator1
         - id: internalCustomerContacts
           uri: https://www.sogou.com/
           predicates:
